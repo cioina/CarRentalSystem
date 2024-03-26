@@ -9,14 +9,15 @@ public class CurrentUserService : ICurrentUser
 {
     public CurrentUserService(IHttpContextAccessor httpContextAccessor)
     {
-        var user = httpContextAccessor.HttpContext?.User;
+        var user = httpContextAccessor.HttpContext?.User!;
         if (user == null)
         {
             throw new InvalidOperationException("This request does not have an authenticated user.");
         }
 
-        this.UserId = user.FindFirstValue(ClaimTypes.NameIdentifier);
+        var claim = user!.FindFirstValue(ClaimTypes.NameIdentifier);
+        this.UserId = claim!;
     }
 
-    public string UserId { get; }
+    public string UserId { get; init; } = default!;
 }

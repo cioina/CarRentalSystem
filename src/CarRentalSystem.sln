@@ -1,19 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5C39C50F-36B5-4453-BE7C-C68F941B30A8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\CarRentalSystem.Domain.csproj", "{16094B91-038C-4688-9636-1E00F2D11551}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRentalSystem.Domain", "Domain\CarRentalSystem.Domain.csproj", "{16094B91-038C-4688-9636-1E00F2D11551}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Startup", "Startup\CarRentalSystem.Startup.csproj", "{ED40569A-8E82-400C-AFFF-C2F0B0E0C579}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRentalSystem.Startup", "Startup\CarRentalSystem.Startup.csproj", "{ED40569A-8E82-400C-AFFF-C2F0B0E0C579}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "Web\CarRentalSystem.Web.csproj", "{E4A9E242-FE8A-494A-B3DB-6D5C4BBC4266}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRentalSystem.Web", "Web\CarRentalSystem.Web.csproj", "{E4A9E242-FE8A-494A-B3DB-6D5C4BBC4266}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\CarRentalSystem.Infrastructure.csproj", "{3A6406A2-A538-4BB4-AF94-392A28237C71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRentalSystem.Infrastructure", "Infrastructure\CarRentalSystem.Infrastructure.csproj", "{3A6406A2-A538-4BB4-AF94-392A28237C71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\CarRentalSystem.Application.csproj", "{E3E4324B-AF6F-4C01-B950-47E1D13D70B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRentalSystem.Application", "Application\CarRentalSystem.Application.csproj", "{E3E4324B-AF6F-4C01-B950-47E1D13D70B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatR", "..\..\MyTested\vendor\MediatR\MediatR.csproj", "{68B45ED8-CB2A-4D32-8F0E-21B79C1A55B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{E3E4324B-AF6F-4C01-B950-47E1D13D70B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3E4324B-AF6F-4C01-B950-47E1D13D70B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3E4324B-AF6F-4C01-B950-47E1D13D70B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B45ED8-CB2A-4D32-8F0E-21B79C1A55B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B45ED8-CB2A-4D32-8F0E-21B79C1A55B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B45ED8-CB2A-4D32-8F0E-21B79C1A55B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B45ED8-CB2A-4D32-8F0E-21B79C1A55B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{E4A9E242-FE8A-494A-B3DB-6D5C4BBC4266} = {5C39C50F-36B5-4453-BE7C-C68F941B30A8}
 		{3A6406A2-A538-4BB4-AF94-392A28237C71} = {5C39C50F-36B5-4453-BE7C-C68F941B30A8}
 		{E3E4324B-AF6F-4C01-B950-47E1D13D70B6} = {5C39C50F-36B5-4453-BE7C-C68F941B30A8}
+		{68B45ED8-CB2A-4D32-8F0E-21B79C1A55B0} = {5C39C50F-36B5-4453-BE7C-C68F941B30A8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {67A6C614-D88B-40E1-B78F-BAD4571B7E6D}

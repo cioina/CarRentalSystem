@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Application;
 using Application.Features.Identity;
 using Application.Features.Identity.Commands.LoginUser;
-using CarRentalSystem.Application.Features.Identity.Commands;
+using Application.Features.Identity.Commands;
 using Microsoft.AspNetCore.Identity;
 
 internal class IdentityService : IIdentity

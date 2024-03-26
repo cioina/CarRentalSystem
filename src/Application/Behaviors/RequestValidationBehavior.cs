@@ -19,14 +19,14 @@ public class RequestValidationBehavior<TRequest, TResponse>
 
     public Task<TResponse> Handle(
         TRequest request,
-        CancellationToken cancellationToken,
-        RequestHandlerDelegate<TResponse> next)
+        RequestHandlerDelegate<TResponse> next,
+        CancellationToken cancellationToken)
     {
         var context = new ValidationContext<TRequest>(request);
 
         var errors = this.validators
-            .Select(v => v.Validate(context))
-            .SelectMany(result => result.Errors)
+            .Select(v => v.ValidateAsync(context))
+            .SelectMany(result => result.Result.Errors)
             .Where(f => f != null)
             .ToList();
 

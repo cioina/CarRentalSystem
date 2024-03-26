@@ -61,7 +61,7 @@ public static class InfrastructureConfiguration
             .GetSection(nameof(ApplicationSettings))
             .GetValue<string>(nameof(ApplicationSettings.Secret));
 
-        var key = Encoding.ASCII.GetBytes(secret);
+        var key = Encoding.ASCII.GetBytes(secret!);
 
         services
             .AddAuthentication(authentication =>
